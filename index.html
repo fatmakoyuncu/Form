@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-top">
+
+            <form id="myForm" autocomplete="off">
+                <div class="header">
+                    <h1>Lütfen Bilgilerinizi Giriniz...</h1>
+                </div>
+
+                <div class="user-input">
+                    <div class="info">
+                        <p>Id</p>
+                        <p>Ad</p>
+                        <p>Soyad</p>
+                        <p>Telefon</p>
+                        <p>Adres</p>
+                    </div>
+
+                    <div class="info-input">
+                        <div class="rand-input">
+                            <input type="text" id="id" class="userID">
+                            <div class="random">
+                                <input type="button" id="randNum" onclick="rand()" value="ID Ata">
+                            </div>
+                        </div>
+                        <input type="text" id="name" class="userName" value="">
+                        <input type="text" id="lastname" class="userLastname" value="">
+                        <input type="number" id="phone" class="userPhone" value="" placeholder="(555) 555-5555">
+                        <input type="text" id="address" class="userAddress" value="">
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Kaydet">
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="contentBottom">
+            <div class="output-header">
+                <h>Kişi Listesi</h>
+            </div>
+
+            <div class="output">
+                <form class="form-2">
+                    <div class="output-info">
+
+                        <p>Id</p>
+                        <p>Ad</p>
+                        <p>Soyad</p>
+                        <p>Telefon</p>
+                        <p>Adres</p>
+                        <p></p>
+                    </div>
+
+                    <div class="outputContent">
+                        <ul id="task-list" class="list-group">
+                            <li class="list-group-item list-group-item-secondary">11</li>
+                            <li class="list-group-item list-group-item-secondary">Fatma</li>
+                            <li class="list-group-item list-group-item-secondary">Koyuncu</li>
+                            <li class="list-group-item list-group-item-secondary">5350852717</li>
+                            <li class="list-group-item list-group-item-secondary">Başakşehir</li>
+                        </ul>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
+<!-- <p>12</p>
+<p>Fatma</p>
+<p>Koyuncu</p>
+<p>5350852717</p>
+<p>Kayaşehir</p>
+<p></p> -->
